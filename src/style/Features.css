@@ -1,24 +1,45 @@
+/* Seção Features */
 .features {
-    background-color: #f8f9fa;
-    padding: 2rem 0;
-  }
-  
-  .features h2 {
-    color: #333;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
-  .features h4 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .features p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  margin-top: 00px !important;
+}
+
+/* Títulos principais */
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.features p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Ícones */
+.feature-icon {
+  font-size: 3rem;
+}
+
+/* Títulos dos cartões */
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* Descrições dos cartões */
+.feature-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}

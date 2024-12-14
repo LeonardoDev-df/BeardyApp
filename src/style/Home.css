@@ -1,65 +1,75 @@
-/* Seção Home */
+/* Background geral */
 .home {
-  background: linear-gradient(to right, #4b79a1, #283e51);
-  color: white;
-  height: 100vh;
+  background: linear-gradient(135deg, #373840, #0056b3);
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 1rem;
+  justify-content: center;
+  color: white;
 }
 
-/* Logo */
+/* Logo da home */
 .home-logo {
-  width: 150px;
-  height: auto;
-  border-radius: 40%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  border: 1px solid #373840;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.home-logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Título */
+/* Título principal */
 .home-title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
   font-weight: 700;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
 }
 
 /* Descrição */
 .home-description {
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
   line-height: 1.6;
-  max-width: 600px;
 }
 
-/* Botão */
-.home .btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
-  font-weight: bold;
-  background-color: #fff;
-  color: #333;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+/* Informações adicionais */
+.home-features {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Botões principais */
+.cta-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
   transition: all 0.3s ease;
 }
 
-.home .btn:hover {
-  background-color: #007bff;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+.cta-buttons .btn-light {
+  background-color: #fff;
+  color: #0056b3;
+}
+
+.cta-buttons .btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* Hover nos botões */
+.cta-buttons .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Tagline */
+.home-tagline {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.8;
 }
 
 /* Responsividade */
@@ -69,15 +79,16 @@
   }
 
   .home-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
 
   .home-logo {
-    width: 120px;
-  }
-
-  .home .btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
+    width: 80px;
+    height: 80px;
   }
 }
