@@ -1,0 +1,95 @@
+/* Hover nos links */
+.nav-link:hover {
+  background-color: #495057;
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar geral */
+.navbar {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Logo da navbar */
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Título da marca */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff !important;
+}
+
+/* Estilo para os links */
+.nav-link {
+  color: #dcdcdc !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover nos links */
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff !important;
+  transform: scale(1.1);
+  border-bottom: 2px solid #007bff;
+}
+
+/* Botão colapsável (hamburger) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+  padding: 0.25rem 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar fixa no topo */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-link {
+    margin: 0.3rem 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-toggler {
+    padding: 0.3rem 0.6rem;
+  }
+}

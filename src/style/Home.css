@@ -1,0 +1,83 @@
+/* Seção Home */
+.home {
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Logo */
+.home-logo {
+  width: 150px;
+  height: auto;
+  border-radius: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Descrição */
+.home-description {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Botão */
+.home .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.home .btn:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-logo {
+    width: 120px;
+  }
+
+  .home .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
