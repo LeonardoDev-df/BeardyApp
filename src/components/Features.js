@@ -9,9 +9,13 @@ function Features() {
     <section
       id="features"
       className="features py-5"
-      style={{ backgroundColor: "#F2F0D5" }} // Fundo claro para a seção
+      style={{
+        background: "linear-gradient(45deg, #373840, rgb(217, 187, 150))", // Gradiente elegante
+        color: "#F2F0D5", // Texto claro para contraste
+        padding: "5rem 0",
+      }}
     >
-      <div className="container">
+      <div className="container"  style={{ marginTop: '60px' }}>
         <h2
           className="text-center mb-4"
           style={{ color: "#141826", fontWeight: "bold" }} // Destaque no título

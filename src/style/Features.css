@@ -1,23 +1,31 @@
+/* Importar a fonte Poppins (no seu index.html) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /* Seção Features */
 .features {
   background-color: #f9f9f9;
   padding: 60px 0;
   margin-top: 00px !important;
+  font-family: 'Poppins', sans-serif; /* Aplica a fonte personalizada à seção */
 }
 
 /* Títulos principais */
 .features h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para o título */
 }
 
 .features p {
   font-size: 1rem;
   color: #6c757d;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para o parágrafo */
 }
 
+/* Cartões de funcionalidades */
 .feature-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para os cartões */
 }
 
 .feature-card:hover {
@@ -25,10 +33,10 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Ícones */
 .feature-icon {
   font-size: 3rem;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para ícones */
 }
 
 /* Títulos dos cartões */
@@ -36,10 +44,12 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin: 15px 0;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para o título dos cartões */
 }
 
 /* Descrições dos cartões */
 .feature-description {
   font-size: 1rem;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para a descrição */
 }

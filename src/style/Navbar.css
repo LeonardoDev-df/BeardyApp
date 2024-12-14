@@ -6,12 +6,18 @@
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
+/* Configuração da fonte no CSS */
+body, .navbar, .nav-link {
+  font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+}
+
 /* Navbar geral */
 .navbar {
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #343a40; /* Cor do fundo da navbar */
 }
-
 /* Logo da navbar */
 .navbar-logo {
   width: 40px;
