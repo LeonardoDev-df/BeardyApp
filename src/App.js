@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Features from "./components/Features";
 import Demo from "./components/Demo";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Navbar />
       <Home />
+      <About/>
       <Features />
       <Demo />
       <Contact />

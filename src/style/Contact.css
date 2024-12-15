@@ -51,12 +51,23 @@
 
 .social-buttons .social-icon {
   font-size: 2rem;
-  color: #555;
+  color: #e4405f;
   transition: color 0.3s ease;
 }
 
+.social-buttons .social-iconsa {
+  font-size: 2rem;
+  color: #25d366;
+  transition: color 0.3s ease;
+}
+
+
 .social-buttons .social-icon:hover {
   color: #007bff;
+}
+
+.social-buttons .social-iconsa.whatsapp:hover {
+  color: #fff;
 }
 
 .social-buttons .social-icon.whatsapp:hover {
@@ -64,7 +75,7 @@
 }
 
 .social-buttons .social-icon.instagram:hover {
-  color: #e4405f;
+  color: #fff;
 }
 
 /* Responsividade */
@@ -93,6 +104,7 @@
   .social-buttons .social-icon {
     font-size: 1.75rem;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -101,6 +113,9 @@
   }
 
   .social-buttons .social-icon {
+    font-size: 1.5rem;
+  }
+  .social-buttons .social-iconsa {
     font-size: 1.5rem;
   }
 }

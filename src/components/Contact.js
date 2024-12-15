@@ -49,7 +49,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
-              className="social-icon whatsapp"
+              className="social-iconsa whatsapp"
             >
               <FaWhatsapp />
             </a>
