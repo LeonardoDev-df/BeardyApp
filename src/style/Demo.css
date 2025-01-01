@@ -22,14 +22,10 @@ p {
 
 /* Estilos das colunas e cartões */
 .demo-card {
-  
   border-radius: 8px;
   padding: 2rem;
- 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .demo-card h4 {
   color: #373840;
@@ -53,13 +49,14 @@ p {
 }
 
 .demo-card video {
-  width: 100%;
+  width: 100%; /* Ajusta a largura para 100% do container */
+  max-width: 400px; /* Define uma largura máxima */
   border-radius: 8px;
-  height: 155%;
+  height: auto; /* Mantém a proporção do vídeo */
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  justify-content: center;
+  display: block; /* Garante que o vídeo seja exibido como um bloco */
+  margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .demo-card p {
@@ -128,19 +125,6 @@ p {
 
 /* Responsividade */
 @media (max-width: 767px) {
-  .photo-grid {
-    grid-template-columns: repeat(1, 1fr); /* Apenas uma coluna em dispositivos menores */
-  }
-
-  .photo-modal-content img {
-    max-width: 95%;
-    max-height: 95%;
-  }
-}
-
-
-/* Responsividade */
-@media (max-width: 767px) {
   #demo {
     padding: 4rem 0;
   }
@@ -155,7 +139,8 @@ p {
 
   .demo-card img,
   .demo-card video {
-    max-height: 300px;
+    max-width: 100%;
+    height: auto;
   }
 
   .photo-grid {

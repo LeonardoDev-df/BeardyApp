@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "../style/Demo.css";
-import print from "../images/app.jpg";
-import photo1 from "../images/app.jpg";
+import print from "../images/imag.jpg";
+import photo1 from "../images/imag.jpg";
 import photo2 from "../images/app.jpg";
 import photo3 from "../images/app.jpg";
 import photo4 from "../images/app.jpg";
-import video from "../videos/VideoApp.mp4";
+import video from "../videos/Vide.mp4";
 
 function Demo() {
   const [selectedPhoto, setSelectedPhoto] = useState(print); // Foto selecionada
@@ -72,8 +72,8 @@ function Demo() {
                 controls
                 className="rounded"
                 style={{
-                  width: "100%",
-                  maxHeight: "500px",
+                  width: "60%",
+                  maxHeight: "750px",
                   objectFit: "cover",
                 }}
               >
