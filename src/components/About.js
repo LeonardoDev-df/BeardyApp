@@ -3,6 +3,7 @@ import "../style/About.css";
 import appImage1 from "../images/beardy.png"; // Imagem representando o app 1
 import appImage2 from "../images/LogoConnect.webp"; // Imagem representando o app 2
 
+
 const AboutSection = ({ title, description, image, features, reverse }) => (
   <div className={`row align-items-center mb-5 ${reverse ? "flex-md-row-reverse" : ""}`}>
     <div className="col-md-6 text-center">

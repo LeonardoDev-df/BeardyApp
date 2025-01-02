@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "../style/Demo.css";
 import print from "../images/imag.jpg";
 import photo1 from "../images/imag.jpg";
-import photo2 from "../images/app.jpg";
-import photo3 from "../images/app.jpg";
-import photo4 from "../images/app.jpg";
+import photo2 from "../images/barbers.jpg";
+import photo3 from "../images/barbershop.jpg";
+import photo4 from "../images/cadastro.jpg";
 import video from "../videos/Vide.mp4";
 
 function Demo() {
@@ -47,7 +47,7 @@ function Demo() {
 
               {/* Galeria de Miniaturas */}
               <div className="photo-grid mt-3">
-                {[photo1].map((photo, index) => (
+                {[photo1, photo2, photo3, photo4].map((photo, index) => (
                   <img
                     key={index}
                     src={photo}
